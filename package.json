@@ -1,0 +1,19 @@
+{
+  "name": "portofolio-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "caniuse-lite": "^1.0.30001625",
+    "install": "^0.13.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.6.1",
+    "tailwindcss": "^3.4.3"
+  }
+}

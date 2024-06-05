@@ -14,6 +14,16 @@ window.onscroll = function () {
     toTop.classList.add('hidden');
   }
 };
+
+//typescript
+var typed = new Typed(".multiple-text", {
+  strings: ["Front-End Developer", "Graphic Designer", "UI-UX Designer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
+})
+
 //Hamburger
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
@@ -52,3 +62,23 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   darkToggle.checked = false;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  AOS.init({ duration: 1200, once: false });
+
+  const element = document.querySelector('.animate-me');
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // Scroll ke bawah
+      element.setAttribute('data-aos', 'fade-right');
+    } else {
+      // Scroll ke atas
+      element.setAttribute('data-aos', 'fade-left');
+    }
+    lastScrollTop = scrollTop;
+    AOS.refresh(); // Refresh AOS untuk menerapkan perubahan
+  });
+});

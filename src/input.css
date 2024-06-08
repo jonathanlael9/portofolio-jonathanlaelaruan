@@ -32,3 +32,42 @@ link {
   display: none;
 }
 
+.card {
+  width: 100%; /* Atur lebar card */
+  overflow: hidden; /* Pastikan konten tidak melebihi batas card */
+}
+
+.card img {
+  width: 100%; /* Atur lebar gambar mengikuti lebar card */
+  height: 200px; /* Tetapkan tinggi tetap */
+  object-fit: cover; /* Pastikan gambar menutupi area yang ditentukan */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background-color: #ffff; /* Warna latar belakang */
+  color: #fff; /* Warna ikon */
+  border-radius: 50%; /* Bentuk bulat */
+  padding: 12px; /* Ukuran padding */
+  width: 40px; /* Lebar tombol */
+  height: 40px; /* Tinggi tombol */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3; /* Transparansi tombol */
+  transition: all 0.3s ease; /* Transisi untuk hover */
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: #555; /* Warna latar belakang saat hover */
+  opacity: 1; /* Kehilangan transparansi saat hover */
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 20px; /* Ukuran ikon */
+}

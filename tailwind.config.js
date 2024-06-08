@@ -18,6 +18,7 @@ module.exports = {
         '2xl': '1320px',
         sm: '390px',
       },
+
     },
   },
   plugins: [],

@@ -1,3 +1,5 @@
+
+
 // navbarfixed
 window.onscroll = function () {
   const header = document.querySelector('header');
@@ -80,5 +82,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     lastScrollTop = scrollTop;
     AOS.refresh(); // Refresh AOS untuk menerapkan perubahan
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.mySwiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 2000, // Waktu tunda antar slide (dalam milidetik)
+      disableOnInteraction: false, // Lanjutkan autoplay setelah interaksi pengguna
+    },
   });
 });

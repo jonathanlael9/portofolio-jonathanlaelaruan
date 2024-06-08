@@ -6,7 +6,8 @@
     <title>Portofolio Jonathan Lael Aruan</title>
     <link rel="icon" href="svg/icon.png" type="image/x-icon">
     <link href="src/output.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- AOS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
@@ -21,6 +22,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } 
     </script>
 
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   </head>
   <body>
@@ -251,9 +255,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
         </div>
       </div>
     </section>
-    <!-- Akhir Web -->
+    <!-- Akhir design -->
 
-    <!-- Projects -->
+    <!-- web -->
     <section id="web" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
@@ -263,19 +267,53 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
             <p class="font-medium text-secondary text-md md:text-lg">Project website yang pernah saya kerjakan</p>
           </div>
         </div>
-        <div class="w-fit px-4 flex flex-wrap break-before-page justify-center xl:w-10/12 xl:mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800 px-4">
-            <img src="img/Travlog.png" alt="test" class="w-full" />
-            <div class="py-8 px-6">
-              <h3><a href="https://drive.google.com/file/d/1hVzV8FNME_Gy2WMONgU6qc1vzJE1vm_O/view?usp=sharing" target="_blank" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Travlog Website</a></h3>
-              <p class="font-medium text-base text-secondary mb-6">Travlog Website ini adalah sebuah project non-komersial yang saya buat sendiri menggunakan Tailwind CSS</p>
-              <a href="https://jonathanlael9.github.io/Travlog/"target="_blank  " class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">View Website</a>
+
+        <!-- start card -->
+        <div class="w-fit px-4 flex gap-4 break-before-page justify-center xl:w-10/12 xl:mx-auto" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/Travlog.png" alt="Image 1"></div>
+                  <div class="swiper-slide"><img src="img/travlog2.png" alt="Image 2"></div>
+                  <div class="swiper-slide"><img src="img/travlog3.png" alt="Image 2"></div>
+                  <div class="swiper-slide"><img src="img/travlog4.png" alt="Image 2"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+              </div>
+              <div class="py-8 px-6">
+                <h3><a href="https://jonathanlael9.github.io/Travlog/" target="_blank" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Travlog Website</a></h3>
+                <p class="font-medium text-base text-secondary mb-6">Website Non-komersial yang saya buat menggunakan framework TailwindCSS</p>
+                <a href="https://jonathanlael9.github.io/Travlog/"target="_blank  " class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Lihat Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/tokopekita.png" alt="Image 1"></div>
+                  <div class="swiper-slide"><img src="img/tokopekita2.png" alt="Image 2"></div>
+                  <div class="swiper-slide"><img src="img/tokopekita3.png" alt="Image 2"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+              </div>
+              <div class="py-8 px-6">
+                <h3><a href="https://drive.google.com/file/d/1hVzV8FNME_Gy2WMONgU6qc1vzJE1vm_O/view?usp=sharing" target="_blank" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">UAS BASIS DATA</a></h3>
+                <p class="font-medium text-base text-secondary mb-6">Project UAS BASIS DATA membuat Website Shopping cart menggunakan PHP.</p>
+                <a href="https://github.com/jonathanlael9/uas_Basis_data"target="_blank  " class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-lg hover:opacity-80">Lihat Repository</a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
-    <!-- Akhir Project -->
+    <!-- Akhir web -->
 
     <!-- Skills -->
     <section id="Skills" class="pt-36 pb-40 bg-slate-800 dark:bg-slate-300">
@@ -540,6 +578,8 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2 "> </span>
     </a>
     <!-- Akhir Backtostart -->
+
+
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

@@ -33,14 +33,20 @@ link {
 }
 
 .card {
-  width: 100%; /* Atur lebar card */
-  overflow: hidden; /* Pastikan konten tidak melebihi batas card */
+  max-width: 100%;
+  margin: 0 auto;
 }
+
 
 .card img {
   width: 100%; /* Atur lebar gambar mengikuti lebar card */
   height: 200px; /* Tetapkan tinggi tetap */
   object-fit: cover; /* Pastikan gambar menutupi area yang ditentukan */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide img {
@@ -70,4 +76,12 @@ link {
 
 .swiper-button-prev::after, .swiper-button-next::after {
   font-size: 20px; /* Ukuran ikon */
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev, .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+  }
 }
